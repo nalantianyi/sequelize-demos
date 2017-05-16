@@ -6,6 +6,6 @@
 
 
 /*
- 这部分比较容易，参见教程
+ 这部分操作比较常见，参见教程
  https://itbilu.com/nodejs/npm/V1PExztfb.html#definition-getter-setter
  */
