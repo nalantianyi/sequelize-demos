@@ -1,0 +1,24 @@
+{
+  "name": "sequelize-demos",
+  "version": "1.0.0",
+  "description": "sequelize的使用，章节按照https://itbilu.com/nodejs/npm/N1yrA4HQW.html的教程",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nalantianyi/sequelize-demos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nalantianyi/sequelize-demos/issues"
+  },
+  "homepage": "https://github.com/nalantianyi/sequelize-demos#readme",
+  "dependencies": {
+    "pg": "^6.2.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.4"
+  }
+}
