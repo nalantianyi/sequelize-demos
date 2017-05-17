@@ -23,5 +23,7 @@ async function init() {
     const tasks=await Task.findAll({include:[User]});
     console.log(JSON.stringify(tasks));
 
+    //更多关联在关联的数据的章节
+
 }
 init();
