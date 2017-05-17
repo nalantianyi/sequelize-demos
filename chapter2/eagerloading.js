@@ -15,13 +15,13 @@ User.hasMany(Tool, {as: 'Instruments'});
 async function init() {
     await sequelize.sync({force: true});
     // this is where we continue ...
-    console.log('sync done!');
     //新建user
     const user = await User.create({name: 'zhangjinhe'});
-    console.log(user.toJSON());
-    const task = await Task.create({name: 'A Task', userId: user.get('id')});
-    console.log(task.toJSON());
+    const task = await Task.create({name: 'A Task'});
+    await user.addTask(task);
     //关联查询
+    const tasks=await Task.findAll({include:[User]});
+    console.log(JSON.stringify(tasks));
 
 }
 init();
