@@ -22,8 +22,13 @@ async function init() {
 
     await user1.addProject(project1);
     await user1.addProject(project2);
-    const projects4user1=await user1.getProjects();
 
+    const users = await User.findAll({
+        include: [{
+            model: Project
+        }]
+    });
+    console.log(JSON.stringify(users));
 
 
 }

@@ -24,5 +24,9 @@ async function init() {
     const usersJson=users.map((user)=>{return user.toJSON()});
     console.log(usersJson);
 
+
+    const projects=await Project.findAll({include:[{model:User}]});
+    console.log(projects);
+
 }
 init();
