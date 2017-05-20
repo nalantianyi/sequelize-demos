@@ -24,7 +24,5 @@ async function init() {
     const usersJson=users.map((user)=>{return user.toJSON()});
     console.log(usersJson);
 
-
-
 }
 init();
