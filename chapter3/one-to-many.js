@@ -25,8 +25,6 @@ async function init() {
     console.log(usersJson);
 
 
-    const projects=await Project.findAll({include:[{model:User}]});
-    console.log(projects);
 
 }
 init();
